@@ -1,0 +1,24 @@
+{  
+    "short_name":"LBTC",
+    "name":"Let's Be The Change",
+    "icons":[  
+        {  
+            "src":"images/icons/favicon.png",
+            "type":"image/png",
+            "sizes":"32x32"
+        },
+{  
+            "src":"images/logo.png",
+            "type":"image/png",
+            "sizes":"150x150"
+        },
+    ],
+    "background_color":"#FFFFFF",
+    "display":"standalone",
+    "orientation":"portrait",
+    "theme_color":"#007799",
+    "start_url":"index.html",
+    "manifest_version": 2,
+    "version": "1.0",
+    "summary":"LBTC is an NGO that has one mission - Clean Bengaluru."
+}
