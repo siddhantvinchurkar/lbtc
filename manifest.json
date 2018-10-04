@@ -7,11 +7,11 @@
             "type":"image/png",
             "sizes":"32x32"
         },
-{  
+	{  
             "src":"images/logo.png",
             "type":"image/png",
             "sizes":"150x150"
-        },
+        }
     ],
     "background_color":"#FFFFFF",
     "display":"standalone",

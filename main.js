@@ -1,10 +1,14 @@
+// Global Variables
+var materialboxedElements;
+var materialboxedInstances;
+
 window.onload = function(){
 	// Register a Service Worker
-	if('serviceWorker' in navigator) {
-	  navigator.serviceWorker
-	           .register('sw.js')
-	           .then(function() { console.log("%cService Worker Registered!", "background:#222222; color:#BADA55;"); });
-	}
+//	if('serviceWorker' in navigator) {
+//	  navigator.serviceWorker
+//	           .register('sw.js')
+//	           .then(function() { console.log("%cService Worker Registered!", "background:#222222; color:#BADA55;"); });
+//	}
 
 	// Set year on footer
 	document.getElementById("footerYear").innerHTML = new Date().getFullYear();
@@ -23,4 +27,10 @@ window.onload = function(){
 	var db = firebase.firestore();
 
 	console.log("%cFirebase Initialized!", "background:#222222; color:#BADA55;");
+
+	// Initialize Materialize Components
+	document.addEventListener('DOMContentLoaded', function(){
+		materialboxedElements = document.querySelectorAll('.materialboxed');
+		materialboxedInstances = M.Materialbox.init(materialboxedElements);
+	});
 }
