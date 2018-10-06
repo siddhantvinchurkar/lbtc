@@ -1,7 +1,3 @@
-// Global Variables
-var materialboxedElements;
-var materialboxedInstances;
-
 window.onload = function(){
 	// Register a Service Worker
 //	if('serviceWorker' in navigator) {
@@ -28,9 +24,8 @@ window.onload = function(){
 
 	console.log("%cFirebase Initialized!", "background:#222222; color:#BADA55;");
 
-	// Initialize Materialize Components
-	document.addEventListener('DOMContentLoaded', function(){
-		materialboxedElements = document.querySelectorAll('.materialboxed');
-		materialboxedInstances = M.Materialbox.init(materialboxedElements);
+	// Initialize Slider
+	$(document).ready(function(){
+		$('.slider').slider();
 	});
 }
