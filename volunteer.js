@@ -1,7 +1,13 @@
 window.onload = function(){
 
-	// Set year on footer
-	document.getElementById("footerYear").innerHTML = new Date().getFullYear();
+	// Load Header
+	$("#header").load("header.html");
+
+	// Load Footer
+	$("#footer").load("footer.html");
+
+	// Load Final Section
+	$("#finalSection").load("final_section.html");
 
 	// Initialize Firebase
 	firebase.initializeApp({
@@ -15,8 +21,6 @@ window.onload = function(){
 
 	// Initialize Cloud Firestore through Firebase
 	var db = firebase.firestore();
-
-	console.log("%cFirebase Initialized!", "background:#222222; color:#BADA55;");
 
 	// Initialize Autocomplete
 	$(document).ready(function(){

@@ -1,10 +1,4 @@
 window.onload = function(){
-	// Register a Service Worker
-//	if('serviceWorker' in navigator) {
-//	  navigator.serviceWorker
-//	           .register('sw.js')
-//	           .then(function() { console.log("%cService Worker Registered!", "background:#222222; color:#BADA55;"); });
-//	}
 
 	// Load Header
 	$("#header").load("header.html");
@@ -22,7 +16,7 @@ window.onload = function(){
 	projectId: 'lets-be-the-change'
 	});
 
-	// Acknowledge Firestore timestamp changes
+	// Acknowledge changes
 	firebase.firestore().settings({timestampsInSnapshots: true});
 
 	// Initialize Cloud Firestore through Firebase
