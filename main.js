@@ -33,4 +33,7 @@ window.onload = function(){
 		$('.slider').slider();
 	});
 
+	// Precautions.
+	document.getElementById("requestRefresh").innerHTML = "Refresh?"
+
 }
