@@ -31,7 +31,9 @@ window.onload = function(){
 				"Shantinagar": null
 			},
 		});
+		$('input#comments, input#phone').characterCounter();
 	});
+
 
 	// Handle Bangalorean Checkbox
 	document.getElementById("bangaloreanCheckbox").onclick = function(){

@@ -50,32 +50,36 @@
 							<div class="row">
 								<div class="input-field col s6">
 									<i class="material-icons prefix">account_circle</i>
-									<input placeholder="Rahul" id="firstName" type="text" class="validate">
+									<input placeholder="Rahul" id="firstName" type="text" class="validate" required>
 									<label for="firstName">First Name</label>
+									<span class="helper-text" data-error="This is a required field" data-success="Perfect.">Can't really go wrong here, now can you?</span>
 								</div>
 								<div class="input-field col s6">
-									<input placeholder="Prakash" id="lastName" type="text" class="validate">
+									<input placeholder="Prakash" id="lastName" type="text" class="validate" required>
 									<label for="lastName">Last Name</label>
+									<span class="helper-text" data-error="This is a required field" data-success="Perfect.">No, you're not Beyoncé.</span>
 								</div>
 							</div>
 							<div class="row">
 								<div class="input-field col s6">
 									<i class="material-icons prefix">email</i>
-									<input placeholder="myemail@example.com" id="email" type="email" class="validate">
+									<input placeholder="myemail@example.com" id="email" type="email" class="validate" required>
 									<label for="email">Email Address</label>
+									<span class="helper-text" data-error="Please enter a valid email address" data-success="Perfect.">We will use this to identify you.</span>
 								</div>
 								<div class="input-field col s6">
 									<i class="material-icons prefix">phone</i>
-									<input placeholder="9785412548" id="phone" type="text" class="validate">
+									<input placeholder="9785412548" data-length="10" id="phone" type="number" min="6000000000" max="9999999999" pattern="^\d{10}$" class="validate" required>
 									<label for="phone">Phone Number</label>
-									<span class="helper-text" data-error="wrong" data-success="right">Country code not required</span>
+									<span class="helper-text" data-error="Please enter a valid phone number" data-success="Perfect.">Country code not required for Indian numbers</span>
 								</div>
 							</div>
 							<div class="row">
 								<div class="input-field col s12">
 									<i class="material-icons prefix">message</i>
-									<input placeholder="We can donate paint buckets and paint brushes..." id="help" type="text" class="validate">
+									<input placeholder="We can donate paint buckets and paint brushes..." id="help" type="text" class="validate" required>
 									<label for="help">How can you help us?</label>
+									<span class="helper-text" data-error="This is a required field" data-success="Perfect.">Give us an idea about how you will be helping us</span>
 								</div>
 							</div>
 						</form>

@@ -22,4 +22,9 @@ window.onload = function(){
 	// Initialize Cloud Firestore through Firebase
 	var db = firebase.firestore();
 
+	// Initialize Autocomplete
+	$(document).ready(function(){
+		$('input#phone').characterCounter();
+	});
+
 }
